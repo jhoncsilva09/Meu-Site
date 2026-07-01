@@ -223,6 +223,75 @@ main {
     color: #304762;
 }
 
+.timeline {
+    position: relative;
+    margin-top: 1.5rem;
+    padding-left: 1.2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #3b5bdb, #c97a4a);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-left: 1.4rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 1px;
+    top: 0.4rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #3b5bdb;
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px rgba(59, 91, 219, 0.15);
+}
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(59, 91, 219, 0.12);
+    border-radius: 16px;
+    padding: 0.9rem 1rem;
+    box-shadow: 0 10px 24px rgba(15, 34, 60, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(15, 34, 60, 0.1);
+}
+
+.timeline-year {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #c97a4a;
+}
+
+.timeline-content h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1rem;
+    color: #1f2a37;
+}
+
+.timeline-content p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
 .historia-carreira,
 .historia-carreira2 {
     display: grid;
