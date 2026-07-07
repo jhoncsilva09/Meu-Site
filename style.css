@@ -317,13 +317,23 @@ main {
 }
 
 .imagem,
-.imagem2 {
+.imagem2,
+.imagem3 {
     display: flex;
     justify-content: center;
 }
 
+.imagens-carreira {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
 .imagem img,
-.imagem2 img {
+.imagem2 img,
+.imagem3 img {
     width: min(100%, 420px);
     aspect-ratio: 3 / 4;
     object-fit: cover;
@@ -605,24 +615,6 @@ main {
     .contato img {
         width: 36px;
         height: 36px;
-    }
-}
-    .redes {
-        gap: 20px;
-    }
-
-    .contato img {
-        width: 70px;
-        height: 70px;
-    }
-
-    /* Footer */
-    .container-footer {
-        font-size: large;
-    }
-
-    h1, h2, h3 {
-        font-size: x-large;
     }
 }
 
