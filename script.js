@@ -42,6 +42,13 @@ document.addEventListener('DOMContentLoaded', function () {
   );
   scrollItems.forEach(item => scrollObserver.observe(item));
 
+  // Calcula o número de anos desde 2009 na seção de história
+  const anosHistoria = document.getElementById('anos-historia');
+  if (anosHistoria) {
+    const anos = new Date().getFullYear() - 2009;
+    anosHistoria.textContent = anos;
+  }
+
   // Inicializa carrosséis (imagens e depoimentos)
   function initSlider(container, track, prev, next, interval = 4000) {
     if (!container || !track) return;
